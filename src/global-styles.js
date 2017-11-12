@@ -18,6 +18,7 @@ injectGlobal`
     overflow-x: hidden;
   }
   body, button, input, textarea, select {
+    padding-top: 5.2rem;
     line-height: 1.66;
     font-weight: normal;
     font-family: 'Roboto', Roboto, Arial, Helvetica, sans-serif;
@@ -26,6 +27,8 @@ injectGlobal`
     font-smoothing: antialiased;
     background: #352357;
     background-image: linear-gradient(-180deg, #1C2344 0%, #352357 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 1.32rem;
     color: white;
   }
@@ -36,10 +39,10 @@ injectGlobal`
     text-decoration: none;
   }
   img {
-    opacity: 0;
+    opacity: 0.1;
   }
   img:not([src=""]) {
-    animation: fadein 0.5s 0.8s both;
+    animation: fadein 0.2s 0.4s both;
   }
   @keyframes fadein {
     to { opacity: 1; }

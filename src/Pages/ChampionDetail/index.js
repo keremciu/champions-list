@@ -1,19 +1,48 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { TopBar, Content } from 'Components/Layout/styles'
 
-class ListPage extends Component {
+// exportable
+const findChampion = (champions, id) =>
+  champions.find(item => item.champion.id === Number(id));
+
+class DetailPage extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      item: findChampion(
+        this.props.data,
+        this.props.match.params.id
+      )
+    };
+  }
+
   render() {
+    const { champion } = this.state.item;
     return (
       <div>
         <TopBar>
-          <h1>← Ahri SPI</h1>
+          <Link to={`/`}>
+            <h1>← {champion.name} SPI</h1>
+          </Link>
         </TopBar>
         <Content>
-          SPI Details
         </Content>
       </div>
     );
   }
 }
 
-export default ListPage;
+
+function mapStateToProps(state) {
+  return {
+    data: state.list.data,
+    details: state.detail.data,
+  };
+}
+
+export default connect(
+  mapStateToProps
+)(DetailPage);

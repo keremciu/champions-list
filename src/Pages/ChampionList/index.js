@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { TopBar, Content } from 'Components/Layout/styles'
+import { ListItem, Avatar, ItemName } from './styles'
 
-class ListPage extends Component {
+class ListPage extends PureComponent {
   render() {
     return (
       <div>
@@ -9,11 +12,31 @@ class ListPage extends Component {
           <h1>DojoMadness Code Challenge</h1>
         </TopBar>
         <Content>
-          Champions
+          {this.props.data.map(item => (
+            <Link to={`/${item.champion.id}`}>
+              <ListItem>
+                <Avatar>
+                  <img src={item.champion.image_url} alt={item.champion.name} />
+                </Avatar>
+                <ItemName>
+                  {item.champion.name}
+                </ItemName>
+              </ListItem>
+            </Link>
+          ))}
         </Content>
       </div>
     );
   }
 }
 
-export default ListPage;
+
+function mapStateToProps(state) {
+  return {
+    data: state.list.data,
+  };
+}
+
+export default connect(
+  mapStateToProps
+)(ListPage);
