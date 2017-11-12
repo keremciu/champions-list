@@ -1,0 +1,46 @@
+{
+  "champion_spi": {
+    "status": "too_few_games",
+    "overall": {
+      "value": 2787,
+      "badge": "diamond",
+      "count": 20,
+      "upper_limit": 3300,
+      "lower_limit": 2600,
+      "trend": "equal",
+      "status": "normal"
+    },
+    "game_phases": [
+      {
+        "value": 2164,
+        "badge": "platinum",
+        "count": 20,
+        "upper_limit": 2600,
+        "lower_limit": 1900,
+        "trend": "down",
+        "status": "normal",
+        "game_phase": "early_game"
+      },
+      {
+        "value": 2558,
+        "badge": "platinum",
+        "count": 20,
+        "upper_limit": 2600,
+        "lower_limit": 1900,
+        "trend": "equal",
+        "status": "normal",
+        "game_phase": "mid_game"
+      },
+      {
+        "value": 2243,
+        "badge": "platinum",
+        "count": 15,
+        "upper_limit": 2600,
+        "lower_limit": 1900,
+        "trend": "equal",
+        "status": "too_few_games",
+        "game_phase": "late_game"
+      }
+    ]
+  }
+}
