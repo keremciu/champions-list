@@ -11,25 +11,21 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
+    min-height: 100%;
   }
   body {
     margin: 0;
-    padding: 0;
+    padding: 5.2rem 0 0;
     overflow-x: hidden;
+    font-size: 1.32rem;
   }
   body, button, input, textarea, select {
-    padding-top: 5.2rem;
     line-height: 1.66;
     font-weight: normal;
     font-family: 'Roboto', Roboto, Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    background: #352357;
-    background-image: linear-gradient(-180deg, #1C2344 0%, #352357 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 1.32rem;
     color: white;
   }
   *:focus {

@@ -19,4 +19,9 @@ export const TopBar = styled.div`
 
 export const Content = styled.div`
   padding: 0;
+  min-height: calc(100vh - 5.2rem);
+  background: #352357;
+  background-image: linear-gradient(-180deg, #1C2344 0%, #352357 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 `;
