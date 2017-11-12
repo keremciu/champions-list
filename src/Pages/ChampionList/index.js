@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { TopBar, Content } from 'Components/Layout/styles'
-import { ListItem, Avatar, ItemName } from './styles'
+import { ListItem, Avatar, ItemName, ItemNav } from './styles'
+import Icon from 'Components/Icon'
 
 class ListPage extends PureComponent {
   render() {
@@ -21,6 +22,9 @@ class ListPage extends PureComponent {
                 <ItemName>
                   {item.champion.name}
                 </ItemName>
+                <ItemNav>
+                  <Icon type='keyboardArrowRight' />
+                </ItemNav>
               </ListItem>
             </Link>
           ))}

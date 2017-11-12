@@ -26,3 +26,9 @@ export const ItemName = styled.div`
   font-weight: bold;
   color: white;
 `;
+
+export const ItemNav = styled.div`
+  float: right;
+  margin-right: 1.6rem;
+  color: #525268;
+`;

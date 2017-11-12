@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { TopBar, Content } from 'Components/Layout/styles'
+import Icon from 'Components/Icon'
 
 // exportable
 const findChampion = (champions, id) =>
@@ -25,7 +26,7 @@ class DetailPage extends PureComponent {
       <div>
         <TopBar>
           <Link to={`/`}>
-            <h1>← {champion.name} SPI</h1>
+            <h1><Icon type='backArrow' /> {champion.name} SPI</h1>
           </Link>
         </TopBar>
         <Content>
