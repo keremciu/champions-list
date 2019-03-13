@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" key="list" component={ ListPage } />,
             <Route exact path="/detail/:id" key="detail" component={ DetailPage } />,
