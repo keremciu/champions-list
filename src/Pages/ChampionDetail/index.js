@@ -21,7 +21,7 @@ class DetailPage extends PureComponent {
     super(props);
 
     this.state = {
-      item: findChampion(this.props.data, this.props.match.params.id),
+      item: findChampion(props.data, props.match.params.id),
     };
   }
 

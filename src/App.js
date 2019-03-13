@@ -16,7 +16,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" key="list" component={ ListPage } />,
-            <Route exact path="/:id" key="detail" component={ DetailPage } />,
+            <Route exact path="/detail/:id" key="detail" component={ DetailPage } />,
           </Switch>
         </Router>
       </div>

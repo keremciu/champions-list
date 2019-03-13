@@ -14,7 +14,7 @@ class ListPage extends PureComponent {
         </TopBar>
         <Content>
           {this.props.data.map(item => (
-            <Link to={`/${item.champion.id}`}>
+            <Link to={`/detail/${item.champion.id}`}>
               <ListItem>
                 <Avatar>
                   <img src={item.champion.image_url} alt={item.champion.name} />
