@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { TopBar, Content } from 'Components/Layout/styles'
+import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Route,

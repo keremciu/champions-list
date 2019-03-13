@@ -50,8 +50,8 @@ class DetailPage extends PureComponent {
             <Statistics>
               <SecondaryTitle>Game Time SPI for {champion.name}</SecondaryTitle>
               <Phases>
-                {details.game_phases.map(phase => (
-                  <Phase>
+                {details.game_phases.map((phase, index) => (
+                  <Phase key={index}>
                     <h4>{toCapitalize(phase.game_phase)}</h4>
                     <h4>{getMinutes(phase.game_phase)}</h4>
                     <h3>{phase.value}</h3>
