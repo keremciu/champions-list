@@ -1,14 +1,16 @@
 {
-  "main.css": "static/css/main.556fb594.css",
-  "main.css.map": "static/css/main.556fb594.css.map",
-  "main.js": "static/js/main.b18f9043.js",
-  "main.js.map": "static/js/main.b18f9043.js.map",
-  "static/media/roboto-light-webfont.woff": "static/media/roboto-light-webfont.e9cb17d1.woff",
-  "static/media/roboto-light-webfont.woff2": "static/media/roboto-light-webfont.23a4654b.woff2",
-  "static/media/roboto-medium-webfont.woff": "static/media/roboto-medium-webfont.10f738ad.woff",
-  "static/media/roboto-medium-webfont.woff2": "static/media/roboto-medium-webfont.14b09482.woff2",
-  "static/media/roboto-mediumitalic-webfont.woff": "static/media/roboto-mediumitalic-webfont.9252f941.woff",
-  "static/media/roboto-mediumitalic-webfont.woff2": "static/media/roboto-mediumitalic-webfont.f4bab878.woff2",
-  "static/media/roboto-regular-webfont.woff": "static/media/roboto-regular-webfont.2742bac4.woff",
-  "static/media/roboto-regular-webfont.woff2": "static/media/roboto-regular-webfont.df2c0b08.woff2"
+  "main.css": "/champions-list/static/css/main.82df3c71.chunk.css",
+  "main.js": "/champions-list/static/js/main.6713beb3.chunk.js",
+  "main.js.map": "/champions-list/static/js/main.6713beb3.chunk.js.map",
+  "runtime~main.js": "/champions-list/static/js/runtime~main.96c33f28.js",
+  "runtime~main.js.map": "/champions-list/static/js/runtime~main.96c33f28.js.map",
+  "static/css/2.6049c853.chunk.css": "/champions-list/static/css/2.6049c853.chunk.css",
+  "static/js/2.863837aa.chunk.js": "/champions-list/static/js/2.863837aa.chunk.js",
+  "static/js/2.863837aa.chunk.js.map": "/champions-list/static/js/2.863837aa.chunk.js.map",
+  "index.html": "/champions-list/index.html",
+  "precache-manifest.43331e97b4ece7e5d261d0be673e884c.js": "/champions-list/precache-manifest.43331e97b4ece7e5d261d0be673e884c.js",
+  "service-worker.js": "/champions-list/service-worker.js",
+  "static/css/2.6049c853.chunk.css.map": "/champions-list/static/css/2.6049c853.chunk.css.map",
+  "static/css/main.82df3c71.chunk.css.map": "/champions-list/static/css/main.82df3c71.chunk.css.map",
+  "static/media/index.css": "/champions-list/static/media/roboto-regular-webfont.df2c0b08.woff2"
 }
